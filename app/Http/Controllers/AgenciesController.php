@@ -54,4 +54,9 @@ class AgenciesController extends Controller
         $agencies = Agencies::all();
         return view('agencies.list', ['agencies' => $agencies]);
     }
+    
+    public function deleteView() {
+        $agency = Agencies::all();
+        return view('agencies.delete', ['agencies' => $agency]);
+    }
 }

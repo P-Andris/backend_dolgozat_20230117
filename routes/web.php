@@ -28,3 +28,4 @@ Route::put('/api/agencies/{id}', [AgenciesController::class, 'update']);
 Route::get('/agencies/new', [AgenciesController::class, 'newView']);
 Route::get('/agencies/edit/{id}', [AgenciesController::class, 'editView']);
 Route::get('/agencies/list', [AgenciesController::class, 'listView']);
+Route::get('/agencies/delete', [AgenciesController::class, 'deleteView']);

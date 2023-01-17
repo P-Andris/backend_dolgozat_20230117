@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id('route_id');
             $table->date('date');
             // $table->integer('agency_id');
-            $table->foreignId('agency_id')->references('agency_id')->on('agencies');
+            $table->foreignId('agency_id')->references('agency_id')->on('agencies')->default(0);
             $table->integer('limit');
             $table->tinyInteger('status'); // 0: Törölt, 1: Élő
             $table->timestamps();
